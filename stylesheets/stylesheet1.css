@@ -1,0 +1,64 @@
+.para1{
+  color:red;
+  text-decoration:overline;
+  text-transform:capitalize;
+  text-indent:50px;
+  font-family:'Times New Roman', Times, serif;
+  font-size:50px;
+  font-style:"bold";
+}
+.para2{
+  color:rgb(0, 128, 0);
+  text-decoration:underline;
+  text-transform:uppercase;
+  text-indent:50px;
+  font-style:oblique;
+  font-size:40px;
+}
+.para3{
+  color:yellow;
+  text-decoration:line-through;
+  text-transform:lowercase;
+  text-indent:50px;
+  font-style:italic;
+  font-size: 50px;;
+}
+.link{
+  text-decoration:none;
+}
+.link:hover{
+  color:red;
+  background-color:black;
+}
+.link:active{
+  color:white;
+  background-color:black;
+}
+.link:visited{
+  color:red;
+  background-color:brown;
+}
+.olist li{
+  list-style-type: upper-roman;
+}
+table{
+  width:60%;
+  height:40%;
+  border:3px solid red;
+  border-collapse:collapse;
+}
+th{
+  border:2px solid black;
+}
+td{
+  border:1px solid green;
+}
+div{
+  width:80%;
+  height:60%;
+  position:static;
+  background:skyblue url("../Tux.png") no-repeat scroll right top;
+  border:2px solid red;
+  margin:25px;
+  padding:25px;
+}
