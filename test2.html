@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intermediate</title>
+  <style>
+    span{
+      color:red;
+      border:3px solid black;
+    }
+    .extra span{
+      color:inherit;
+    }
+  </style>
+</head>
+<body>
+  <!-- inherit-->
+  <p>inherit</p><br>
+  <div>Here is a <span>A span element</span>Which is in Blue because it inherits from its parent</div>
+  <div class="extra" style="color:blue">Here is a <span>A span element</span>Which is in Blue because it inherits from its parent</div>
+  <div style="color:red">Here is a <span>A span element</span>Which is in Blue because it inherits from its parent</div>
+  <!--initial-->
+  <p>initial</p>
+  <div style="color:red;border:3px solid blue">
+    <h1 align="center" style="color:initial">Header 1</h1>
+    <p>paragraph one</p>
+  </div>
+  <!--revert refer notes-->
+</body>
+</html>
