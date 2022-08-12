@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      border:2px solid black;
+      padding:5px;
+      display:flex;
+      width:500px;
+      height:500px;
+      /*justify-content: flex-start;
+      justify-content:space-around;
+                      :space-between;
+                      center*/
+      justify-content: flex-end;
+      align-content:space-around;
+      /*
+      align-content:baseline;
+                   :stretch;
+        other values same as 
+        justify-content
+      */
+      flex-wrap: wrap;
+    }
+    .box{
+      background-color: orange;
+      color:white;
+      padding:50px;
+      margin:5px;
+      flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+</body>
+</html>
