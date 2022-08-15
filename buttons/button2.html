@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .back{
+       padding:10px 10px;
+      }
+      .next{
+        padding:10px 10px;
+      }
+      .search{
+        padding:2px;
+        color:black;
+      }
+      .stretch{
+        background-color:green;
+        color:white;
+        border:none;
+        padding:10px;
+        transition:padding 1s;
+      }
+      .stretch:hover{
+        cursor:pointer;
+        padding:20px 40px;
+      }
+      .shadow{
+        background-color:green;
+        color:white;
+        margin-top:20px;
+        border:none;
+        padding:10px 20px;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        transition:box-shadow 0.15s; 
+        cursor:pointer;  
+      }
+      .shadow:active{
+        box-shadow:none;
+        /* important*/
+        margin-top:23px;
+        margin-left:3px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button class="back">
+      Back
+    </button>
+    <a class="search" href="google.com">1</a>
+    <a class="search" href="google.com">2</a>
+    <a class="search" href="google.com">3</a>
+    <a class="search" href="google.com">4</a>
+    <a class="search" href="google.com">5</a>
+    <button class="next">
+      Next
+    </button>
+    <button class="stretch">
+      Stretch
+    </button><br>
+    <button class="shadow">
+      Shadow
+    </button>
+  </body>
+</html>
