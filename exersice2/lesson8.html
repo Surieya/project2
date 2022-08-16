@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <style>
+      .container1 input{
+        display:block;
+        margin-top:8px;
+      }
+      .container2 p{
+        display:inline-block;
+        width:200px;
+        vertical-align:middle;
+      }
+      .email{
+        display:block;
+        margin-top:8px;
+        margin-bottom:.5rem;
+        width:212px;
+        padding-top:.25rem;
+        padding-bottom: 0.25rem;
+        border-radius:5px;
+        border:1px solid rgb(200,200,200);
+      }
+      .first,.second
+      {
+        padding-top: .25rem;
+        padding-bottom:.25rem;
+        width:100px;
+        border-radius:5px;
+        border:1px solid rgb(200,200,200);
+      }
+      .container3 button{
+        color:white;
+        background-color:rgb(47,127,231);
+        border:none;
+        font-weight:bold;
+        border-radius:5px;
+        width:214px;
+        padding-top:8px;
+        padding-bottom:8px;
+        margin-bottom:5px;
+      }
+      .container4 p{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:2.5rem;
+        margin-bottom:25px;
+      }
+      .container4 input{
+        padding-right:10px;
+        padding-left:10px;
+        background-color:rgb(240,240,240);
+        display:block;
+        width:300px;
+        margin-bottom:5px;
+        padding:10px 20px;
+        border:none;
+      }
+      .request{
+        margin-top:30px;
+        background-color:black;
+        color:white;
+        font-family:Arial;
+        border:none;
+        padding:10px 20px;
+        border-radius:5px;
+      }
+      .schedule{
+        padding:10px 20px;
+        border:none;
+        margin-left:8px;
+        border-radius:5px;
+      }
+     </style>
+  </head>
+  <body>
+    <div class="container1">
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Email">
+    </div>
+    <div class="container2">
+       <p>
+        Thanks for chatting with our customer support.
+        Would you like to take our quick survey ?
+       </p>
+       <button>
+          Yes
+       </button>
+       <button>
+           No
+       </button>
+    </div>
+    <div class="container3">
+      <input type="text" placeholder="First name" class="first">
+      <input type="text" placeholder="second name" class="second">
+      <input type="text" placeholder="Email" class="email">
+      <button>Sign up</button>
+    </div>
+    <div class="container4">
+       <p>Request a ride now</p>
+       <input type="text" placeholder="Enter pickup location">
+       <input type="text" placeholder="Enter Destination">
+       <button class="request">
+        Request now
+       </button>
+       <button class="schedule">
+        Schedule for later
+       </button>
+    </div>
+  </body>
+</html>
