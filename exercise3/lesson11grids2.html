@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grids 2</title>
+    <style>
+      p{
+        font-family:Arial;
+        margin-top:0px;
+        margin-bottom:0px;
+      }
+      .grid{
+        display:grid;
+        grid-template-columns:200px 200px 200px;
+        column-gap:1.2rem;
+        padding:1rem;
+      }
+      .profile{
+        box-shadow:0px 0px 5px rgba(0,0,0,0.4);
+      }
+      .profile-picture{
+        width:200px;
+        height:200px;
+        object-fit: cover;
+      }
+      .name{
+        font-weight:bold;
+        margin-bottom:8px;
+        margin-left:6px;
+      }
+      .mutual-friends-row{
+        display:grid;
+        grid-template-columns:35px 1fr;
+        align-items:center;
+        margin-left:6px;
+      }
+      .mutual-friend-picture{
+        width:30px;
+        height:30px;
+        border-radius:15px;
+      }
+      .mutual-friend-para{
+        font-size:14px;
+        color: rgb(100, 100, 100);
+      }
+      button{
+        background-color:rgb(24, 119, 242);
+        border:none;
+        color:white;
+        border-radius:4px;
+        padding:10px 20px;
+        margin-top:10px;
+        margin-left:6px;
+        margin-bottom:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+       <div class="profile">
+         <img src="\exercise\cat.jpg" class="profile-picture">
+         <p class="name">Oliver</p>
+         <div class="mutual-friends-row">
+          <img src="\exercise3\dog2.jpg" class="mutual-friend-picture">
+          <p class="mutual-friend-para">2 Mutual friends</p>
+         </div>
+         <button>
+          Add Friend
+         </button>
+       </div>
+
+       <div class="profile">
+        <img src="\exercise\cat.jpg" class="profile-picture">
+        <p class="name">Oliver</p>
+        <div class="mutual-friends-row">
+         <img src="\exercise3\dog2.jpg" class="mutual-friend-picture">
+         <p class="mutual-friend-para">2 Mutual friends</p>
+        </div>
+        <button>
+         Add Friend
+        </button>
+      </div>
+
+      <div class="profile">
+        <img src="\exercise\cat.jpg" class="profile-picture">
+        <p class="name">Oliver</p>
+        <div class="mutual-friends-row">
+         <img src="\exercise3\dog2.jpg" class="mutual-friend-picture">
+         <p class="mutual-friend-para">2 Mutual friends</p>
+        </div>
+        <button>
+         Add Friend
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
