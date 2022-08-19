@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nested flex 1</title>
+    <meta charset="UTF-8">
+    <style>
+      .container1{
+        display: flex;
+        flex-direction:row;
+      }
+      .one{
+        width:100px;
+        height:200px;
+        background-color: lightblue;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+      }
+      .one p{
+        background-color:black;
+        color:white;
+      }
+      .two{
+        width:200px;
+        background-color:lightpink;
+      }
+
+      .container2{
+        display:flex;
+        flex-direction:row;
+        margin-top:40px;
+
+      }
+      .three{
+        background-color:lightblue;
+        width:200px;
+        height:200px;
+      }
+      .four{
+        background-color:lightpink;
+        width:200px;
+        height:200px;
+      }
+      .row2{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+      }
+      .row2 p{
+        background-color:black;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+       <div class=" one">
+         <p>item1</p>
+       </div>
+       <div class=" two"></div>
+    </div>
+
+    <div class="container2">
+      <div class="three"></div>
+      <div class="four">
+        <p>row1</p>
+        <div class="row2">
+           <p>row2</p>
+           <p>row2</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
