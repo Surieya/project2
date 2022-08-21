@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        height:3000px;
+      }
+      .header{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding:10px 50px;
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+        height:50px;
+      }
+      .profile{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+      }
+      .profile-picture{
+        width:40px;
+        height:40px;
+        border-radius:20px;
+        object-fit: cover;
+        margin-right:5px;
+      }
+      .name{
+        font-family:Arial;
+        font-weight: 600; 
+      }
+      .add-friend{
+        padding:8px 12px;
+        border:none;
+        color:white;
+        border-radius:6px;
+        background-color:rgb(24,119,242);
+        font-weight: 600;
+        margin-right:3px;
+      }
+      .message{
+        padding:8px 12px;
+        border:none;
+        background-color:rgb(230,230,230);
+        font-weight: 600;
+        border-radius:6px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="profile">
+        <img src="\exercise\cat.jpg" class="profile-picture">
+        <p class="name">Oliver Cat</p>
+      </div>
+      <div class="btn">
+        <button class="add-friend">
+          Add friend
+        </button>
+        <button class="message">
+          Message
+        </button>
+      </div>
+
+    </div>
+  </body>
+</html>
