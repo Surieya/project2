@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment4</title>
+    <style>
+     *,*::after,*::before{
+        box-sizing: border-box;
+      }
+      body{
+        font-family:Arial;
+        font-size:1.315rem;
+        margin:0;
+      }
+      .hero{
+        background-color:#23424A;
+        padding:100px 0 ;
+        color:#FFF;
+      }
+      .container{
+        width:80%;
+        max-width:1100px;
+        margin:0 auto;
+        padding:3em 0;
+      }
+      .hero__text{
+        width:60%;
+      }
+      .hero p{
+        margin-bottom:3em;
+      }
+      .btn{
+        display:inline-block;
+        color:#23424A;
+        background-color:#38CFD9;
+        font-weight:700;
+        padding:.75em 2em;
+        border-radius:100px;
+        text-decoration:none;
+        text-transform: uppercase;
+      }
+      .row{
+        display:flex;
+        text-align:center;
+        
+      }
+      .col {
+        width:60%;
+      }
+      .col + .col{
+        margin-left:10px;
+      }
+      .three-col h2{
+        color:#87629A;
+      }
+      .two-col{
+        background-color:#136c72;
+        color:#FFF;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container"> 
+        <div class="hero__text">
+          <h1>Responsive layouts don't have to be a struggle</h1>
+          <p>Lorem ipsum dolor sit amet consecte fuga officiis doloremque placeat architecto veritatis quas asperiores soluta. Minus odit sunt culpa harum obcaecati tempore nisi, fugiat blanditiis sint?</p>
+          <a class="btn">i want to learn</a>
+        </div>
+      </div>
+    </div>
+  
+    <section class="three-col">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Cheap</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo officiis suscipit odit, consectetur voluptatum explicabo dolores atque cumque nemo doloremque modi rerum magni distinctio repudiandae nisi sed nam nulla!</p>
+          </div>
+          <div class="col">
+            <h2>Quick</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo officiis suscipit odit, consectetur voluptatum explicabo dolores atque cumque nemo doloremque modi rerum magni distinctio repudiandae nisi sed nam nulla!</p>
+          </div>
+          <div class="col">
+            <h2>Quality</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo officiis suscipit odit, consectetur voluptatum explicabo dolores atque cumque nemo doloremque modi rerum magni distinctio repudiandae nisi sed nam nulla!</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="two-col">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Cheap</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, eum. Cumque ullam quo accusamus facilis nemo suscipit omnis labore. Porro, tenetur laboriosam? Vero iste delectus reprehenderit, eveniet quo corporis vitae.</p>
+        </div>
+        <div class="col">
+          <h2>Quick</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugiat dolor velit impedit eligendi enim dolores! Quaerat obcaecati est cumque voluptate architecto tempora dolorem in optio, assumenda, perferendis rem libero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
