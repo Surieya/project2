@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      *,*::after,*::after{
+        box-sizing: border-box;
+      }
+      body{
+        margin:0;
+        font-family:Arial;
+        font-size:1.315rem;
+      }
+      .hero{
+       background-color:#23424A;
+       padding:100px 0;
+       color:#FFF;
+      }
+      .container{
+        width:80%;
+        max-width:1100px;
+        margin:0 auto;
+        display:flex; 
+        justify-content:space-between;
+      }
+      .hero__text{ 
+        width:60%;
+      }
+      h2{
+        font-size:3rem;
+        margin-top:0;
+      }
+      .hero__img{
+        align-self:flex-start;/*this makes the image to behave individually not as a child of flex:container*/
+        width: 30%;
+      }
+      img{
+        max-width:100%;
+      }
+      .btn{
+        display:inline-block;
+        background-color:#38CFD9;
+        color:#23424A;
+        padding:.75em 2em;
+        text-transform: uppercase;
+        border-radius:50px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container">
+        <div class="hero__text">
+          <h1>Responsive layouts don't have to be struggle</h1>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestiae unde, rerum sint, blanditiis perspiciatis ad eveniet fuga, est quis ut cum veniam dolorum ex esse tenetur officia deserunt commodi.</p>
+          <a class="btn"> i want to learn</a>
+        </div>
+        <img src="\assignment5\02-6 - challenge 2\img\hero-img.jpg" class="hero__img">
+      </div>
+    </div>
+  </body>
+</html>
