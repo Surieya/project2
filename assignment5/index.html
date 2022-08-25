@@ -25,7 +25,7 @@
       .hero__text{ 
         width:60%;
       }
-      h2{
+      h1{
         font-size:3rem;
         margin-top:0;
       }
@@ -45,10 +45,26 @@
         border-radius:50px;
         font-weight: 700;
       }
+      .main{
+        margin-top:3em;
+      }
+      .primary-content{
+        width:60%;
+      }
+      .sidebar{
+        width:30%;
+        text-align:center;
+        color:white;
+        background-color: #136c72;
+        padding: 1em;
+      }
+      .section-title{
+        color:#87629A;
+      }
     </style>
   </head>
   <body>
-    <div class="hero">
+    <header class="hero">
       <div class="container">
         <div class="hero__text">
           <h1>Responsive layouts don't have to be struggle</h1>
@@ -57,6 +73,24 @@
         </div>
         <img src="\assignment5\02-6 - challenge 2\img\hero-img.jpg" class="hero__img">
       </div>
-    </div>
+    </header>
+
+    <main class="main container">
+      <section class="primary-content">
+         <h2 class="section-title"> Quality designs made custom, on demand, just for you</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </section>
+      <aside class="sidebar">
+          <h2 class="sidebar-title">Cheap</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+          <h2 class="sidebar-title">Quick</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+          <h2 class="sidebar-title">Quality</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </aside>
+    </main>
   </body>
 </html>
