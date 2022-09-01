@@ -22,12 +22,16 @@
       margin-top:0;
       line-height: 1.1;
     }
+    img{
+      max-width:100%;
+    }
     section{
       padding:4em 0;
     }
     .container{
       width:85%;
       margin:0 auto;
+      max-width:1128px;
     }
     .section-title{
       font-size:2.25rem;
@@ -39,8 +43,12 @@
     .intro{
       background:#F3EED9;
       padding:200px 0;
-      text-align:center;
       color:#824936;
+      min-height: 660px;
+      text-align:center;
+      display:flex;
+      align-items: center;
+
     }
     .intro__text{
       text-transform: uppercase;
@@ -60,6 +68,21 @@
       background-color:#824936;
       color:white;
     }
+    @media(min-width:800px)
+    {
+      .row{
+        display:flex;
+      }
+      .col{
+        width:100%;
+      }
+      .col+.col{
+        margin-left:5em;
+      }
+      .intro__title{
+        font-size:3.75rem;
+      }
+    }
 
   </style>
 </head>
@@ -67,7 +90,7 @@
   <section class="intro">
   <div class="container">
     <p class="intro__text">Lorem ipsum</p>
-    <h1 class="intro__title"> Responsive  layouts don't have to be a struggle</h1>
+    <h1 class="intro__title"> Responsive  layouts don't<br> have to be a struggle</h1>
   </div>
   </section>
 
