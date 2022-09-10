@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@400;600&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.container{
+  width:75%;
+  margin:0 auto;
+}
+.flex{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:1.5rem;
+}
+img{
+  width:100%;
+}
+header{
+  background-color:#3b4050;
+  color:#ffffff; 
+  width:100%;
+ /*padding:4rem 3rem*/
+ padding: 3em 0;
+}
+header h1{
+/*font-size:5.625rem;*/
+ /*width:45%;*/
+ font-family: Oswald;
+ font-weight:600;
+ font-size:3rem;
+  margin-bottom:2rem;
+}
+header h1 span{
+  color:#A59678;
+}
+.subject{
+ /*width:45%;*/
+}
+.subject p{
+  font-family:Montserrat;
+  /*font-size:24px;*/
+  font-size:16px;
+  margin-bottom:1.5rem;
+  line-height:1.4;
+}
+.subject a{
+  display:inline-block;
+  background-color:#A59678;
+  padding:0.5em 0.8em;
+  font-size:16px;
+  font-family:Oswald;
+  border-radius:100px;
+}
+
+.section-1{
+  background-color:lightgrey;
+  color:#2e323f;
+  padding:3em 0;
+}
+.section-1 p{
+  font-family:Montserrat;
+  font-size:16px;
+  line-height:1.4;
+}
+.section-1 h2{
+  /*font-size:1.875rem;*/
+  font-family:Oswald;
+  font-weight:600;
+  font-size:24px;
+  color:#A59678
+}
+.content-1{
+  /*margin-bottom:1em;*/
+}
+.sec2_img{
+  margin:1em 0;
+}
+.content-2 h2{
+  font-family:Oswald;
+  font-weight:600;
+  font-size:24px;
+  margin-bottom:0.3em;
+}
+.content-2 p{
+  font-family:Montserrat;
+  font-size:16px;
+  line-height:1.4;
+}
+.content-2-div{
+  background-color:#3b4050;
+  text-align:center;
+  border-radius:4px;
+  color:white;
+  margin:0.5em 0;
+}
+footer{
+  background-color:lightgrey;
+  color:#3b4050;
+  text-align:center;
+  padding: 2em 0;
+}
+footer h2{
+  color:#2e323f;
+  font-size:24px;
+  font-family:Oswald;
+  font-weight:600;
+  margin-bottom:0.5rem;
+}
+footer h3{
+  color:#A59678;
+  font-size:21px;
+  font-family:Oswald;
+  font-weight:600;
+  margin-bottom:0.5rem;
+}
+footer p{
+  font-family:montserrat;
+  line-height:1.4;
+  margin-bottom:1em;
+}
