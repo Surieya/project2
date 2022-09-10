@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    .intro{
+      background:#F3EED9;
+      padding: 200px 0;
+      color:#824936;
+      min-height: 660px;
+      text-align:center;
+      display:flex;
+      align-items: center;
+      border:2px solid yellow;
+    }
+    .intro__text{
+      text-transform: uppercase;
+      letter-spacing:10px;
+      font-size:1.125rem;
+      color:#222c2a;
+      margin:0;
+    }
+    .intro__title{
+      font-size:3rem;
+    }
+    .container1{
+      width:85%;
+      margin:0 auto;
+      max-width:1128px;
+      border:2px solid red;
+    }
+
+
+    .flex-center{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .container2{
+        width:min(85%,1128px);
+        margin:0 auto; 
+        border:2px solid red;
+        text-align: center;
+
+      }
+      .height{
+        min-height:650px;
+      }
+      .header__text--para{
+        font-size:1.315rem;
+        text-transform: uppercase;
+        letter-spacing:2px;
+        
+      }
+    
+/* height must not to be given together with container*/
+  </style>
+</head>
+<body>
+  <section class="intro">
+    <div class="container1">
+      <p class="intro__text">Lorem ipsum</p>
+      <h1 class="intro__title"> Responsive  layouts don't<br> have to be a struggle</h1>
+    </div>
+  </section>
+
+  <header style="border:2px solid blue;" class="height flex-center">
+    <div class="container2">
+        <p class="header__text--para">Lorem ipsum sit</p>
+        <h1>
+          Responsive  layouts don't <br> have to be a struggle
+        </h1>
+    </div>
+  </header>
+</body>
+</html>
