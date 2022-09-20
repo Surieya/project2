@@ -7,34 +7,116 @@
   <title>Document</title>
 </head>
 <style>
-  .main{
-      display:grid;
-      grid-template-columns: repeat(4,1fr);
-      gap:1.5rem;
-  }
-  .container{
-      background-color:grey;
-      border-radius:5px;
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+  * {
+     box-sizing: border-box;
     }
+    body{
+      display:flex;
+      font-size: 1.2rem;
+      line-height:1.45; 
+      
+    }
+    .main-content{
+      padding:10%;
+      flex:1 1 90%;
+      min-height:100vh;
+    }
+    .portfolio{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      grid-template-rows: repeat(6,1fr);
+     
+
+     /*
+      grid-auto-flow:1fr;
+
+      grid-template-areas:
+      'one one two two two'
+      'one one two two two'
+      'three three two two two'
+      'three three four five five'
+      'six six six five five'
+      'six six six five five';
+      */
+      gap:10px;
+      height:100%;
+    }
+    .portfolio-item{
+      background:#f96855;
+      font-weight: 700;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    /*
+    .one{
+      grid-area:one;
+    }
+    .two{
+      grid-area:two;
+    }
+    .three{
+      grid-area:three;
+    }
+    .four{
+      grid-area:four;
+    }
+    .five{
+      grid-area:five;
+    }
+    .six{
+      grid-area:six;
+    }
+    */
+    
+  .portfolio-item.small{
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+    .portfolio-item.medium{
+      grid-row:span 2;
+      grid-column: span 2;
+    }
+    .portfolio-item.large{
+      grid-row: span 3;
+      grid-column: span 3;
+    }
+    .portfolio-item.tall{
+      grid-row:span 3;
+      grid-column: span 2;
+    }
+    .portfolio-item.wide{
+      grid-row: span 2;
+      grid-column:span 3;
+    }
+    
+
 </style>
 <body>
-  <main class="main">
-    <div class="container area1">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ipsa est perferendis blanditiis nemo laboriosam labore vitae modi quo aliquam adipisci possimus tempore earum, vel nostrum. Corporis nesciunt temporibus tenetur.</p>
+  <!--<div class="sidebar">
+    <div class="logo">Awesome<span>Portfolio</span></div>
+    <nav>
+      <a href="" class="nav-item">Home</a>
+      <a href="" class="nav-item">About</a>
+      <a href="" class="nav-item active">Portfolio</a>
+      <a href="" class="nav-item">Contact</a>
+    </nav>
+  </div>
+-->
+  
+  <div class="main-content">
+    <div class="portfolio">
+      <div class="portfolio-item medium one">one</div>
+      <div class="portfolio-item large two">two</div>
+      <div class="portfolio-item medium three">three</div>
+      <div class="portfolio-item small four">four</div>
+      <div class="portfolio-item tall five">five</div>
+      <div class="portfolio-item wide six">six</div>
+     <!-- <div class="portfolio-item wide">six</div>
+      <div class="portfolio-item medium">one</div> -->
     </div>
-    <div class="container area2">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ipsa est perferendis blanditiis nemo laboriosam labore vitae modi quo aliquam adipisci possimus tempore earum, vel nostrum. Corporis nesciunt temporibus tenetur.</p>
-    </div>
-    <div class="container area3">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ipsa est perferendis blanditiis nemo laboriosam labore vitae modi quo aliquam adipisci possimus tempore earum, vel nostrum. Corporis nesciunt temporibus tenetur.</p>
-    </div>
-    <div class="container area4">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ipsa est perferendis blanditiis nemo laboriosam labore vitae modi quo aliquam adipisci possimus tempore earum, vel nostrum. Corporis nesciunt temporibus tenetur.</p>
-    </div>
-    <div class="container area5">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem ipsa est perferendis blanditiis nemo laboriosam labore vitae modi quo aliquam adipisci possimus tempore earum, vel nostrum. Corporis nesciunt temporibus tenetur.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptas expedita nam eos quia voluptatibus laborum? Ex, deleniti, eos non delectus neque numquam iusto saepe tenetur voluptates velit molestias est.</p>
-    </div>
-   </main>
+  </div>
 </body>
 </html>
