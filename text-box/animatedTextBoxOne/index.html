@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimatedTextBox</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      /* border:0; */
+      margin:0;
+      
+    }
+    body{
+      width:100vw;
+      height:100vh;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      background-color:#1b2b3a;
+      font-family:Arial;
+    }
+    input{
+      display: block;
+      margin:20px;
+      width:300px;
+      padding:.8em;
+      outline:none;
+      border:1px solid rgba(255,255,255,0.25);
+      background: #1b2b3a;
+      border-radius:10px;
+      font-size:18px;
+      color:#fff;
+      position:relative;
+      
+    }
+    input:active{
+      border:2px solid violet;
+    }
+    .ip{
+      position: relative;
+    }
+    span{
+      content:'Input';
+      position:absolute;
+      /* background-color: red; */
+      color: rgba(255,255,255,0.25);
+      font-size:18px;
+      top:16px;
+      pointer-events: none;
+      /* font-weight:bold; */
+      left:30px;
+      width:auto;
+      padding: 0 10px;
+      height:20px;
+      transition: 0.65s;
+    }
+    input:focus{
+      border:1px solid #00dfc4;
+    }
+    input:focus ~ span {
+      color:#00dfc4;
+      transform:translateX(10px) translateY(-24px);
+      font-size: .8em;
+      background:#1b2b3a;
+      padding:0 6px;
+      /* padding: 0 10px; */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="ip">
+      <input type="text" required="required">
+      <span>Name</span>
+    </div>
+    <div class="ip">
+      <input type="text" required="required">
+      <span>Password</span>
+    </div>
+  </div>
+</body>
+</html>
